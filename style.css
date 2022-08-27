@@ -763,11 +763,11 @@ html {
 
 .animated-icons {
     position: absolute;
-    left: 85%;
+    left: 80%;
     /* margin-right: 25%; */
     top: 4%;
     height: 50vmin;
-    width: 40vmin;
+    width: 50vmin;
     z-index: 1002;
 }
 
@@ -801,16 +801,8 @@ html {
     transform: translate(0, 100%);
 }
 
-#icon1 {
-    width: 16px;
-}
-
-#icon2 {
-    width: 16px;
-}
-
-#icon3 {
-    width: 16px;
+.icon {
+    width: 17px;
 }
 
 .animated-title {
