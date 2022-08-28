@@ -805,6 +805,22 @@ html {
     width: 17px;
 }
 
+/* ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li:hover:before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    background: black;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    left: calc(50% - 8px)
+} */
+
 .animated-title {
     /* text-align: center; */
     height: 50vmin;
