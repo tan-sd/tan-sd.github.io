@@ -769,11 +769,11 @@ html {
 
 .animated-icons {
     position: absolute;
-    left: 82%;
+    left: 79%;
     /* margin-right: 25%; */
     top: 4%;
     height: 60vmin;
-    width: 50vmin;
+    width: 55vmin;
     z-index: 1002;
 }
 
