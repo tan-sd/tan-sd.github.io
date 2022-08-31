@@ -867,7 +867,7 @@ ul li:hover:before {
     font-size: 20vmin;
     font-weight: bold;
     font-family: Helvetica;
-    /* background-clip: text; */
+    background-clip: text;
     -webkit-background-clip: text;
     background-size: cover;
     color: transparent;
