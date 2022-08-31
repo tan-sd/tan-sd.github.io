@@ -770,27 +770,17 @@ html {
 
 .animated-icons {
     position: absolute;
-    left: 79%;
-    /* margin-right: 25%; */
-    top: 4%;
-    height: 60vmin;
+    top: 9%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    height: 10vmin;
     width: 55vmin;
     z-index: 1002;
 }
 
-.animated-icons .icons-wrap {
-    width: 30vmin;
-    height: 10.5%;
-    width: 50%;
-    overflow: hidden;
-    position: absolute;
-    letter-spacing: 20px;
-    /* padding: 20px; */
-}
-
-.animated-icons > div.icons-wrap div a {
+.animated-icons > div a {
     cursor: none;
-    margin-left: 10px;
+    margin-left: 3vmin;
 }
 
 .animated-icons > div div {
@@ -816,7 +806,8 @@ ul li:hover:before {
     width: 7px;
     height: 7px;
     border-radius: 100%;
-    left: calc(50%)
+    left: 4vmin;
+    transform: translate(-50%, -50%);
 }
 
 .animated-title {
