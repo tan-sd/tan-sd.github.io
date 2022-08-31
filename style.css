@@ -192,6 +192,7 @@ html {
     background-size: cover;
     color: transparent;
     background-image: linear-gradient(0deg, #ae9556, #907a46);
+    user-select: none;
 }
 
 .animated-logo > div {
@@ -207,9 +208,9 @@ html {
 
 .button {
     position: absolute;
-    top: 90%;
+    margin-top: 45vmin;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     transition: 0.5;
     border: none;
     background-color: transparent;
@@ -219,7 +220,7 @@ html {
 }
 
 .button img {
-    width: 20px;
+    width: 2.5vmin;
     height: auto;
     animation: fadeInEnter 2s ease-in-out;
     /* pulse 2s infinite; */
@@ -834,6 +835,7 @@ ul li:hover:before {
     overflow: hidden;
     position: absolute;
     width: 100%;
+    user-select: none;
 }
 
 .animated-title .text-bottom {
@@ -842,10 +844,10 @@ ul li:hover:before {
     overflow: hidden;
     position: absolute;
     width: 100%;
+    user-select: none;
 }
 
 .animated-title > div div {
-    font-size: 12vmin;
     padding: 2vmin 0;
     position: absolute;
 }
@@ -871,10 +873,10 @@ ul li:hover:before {
 .animated-title > div.text-top div span {
     width: 90vmin;
     text-align: center;
-    font-size: 1.7em;
+    font-size: 20vmin;
     font-weight: bold;
     font-family: Helvetica;
-    background-clip: text;
+    /* background-clip: text; */
     -webkit-background-clip: text;
     background-size: cover;
     color: transparent;
@@ -884,15 +886,15 @@ ul li:hover:before {
 .animated-title > div.text-bottom div span {
     width: 90vmin;
     text-align: center;
-    font-size: 0.24em;
+    font-size: 2.7vmin;
     font-family: Helvetica;
     background-clip: text;
     -webkit-background-clip: text;
     background-size: cover;
     color: transparent;
     background-image: linear-gradient(0deg, #ae9556, #907a46);
-    letter-spacing: 5px;
-    word-spacing: 10px;
+    letter-spacing: 0.6vmin;
+    word-spacing: 1vmin;
     font-weight: lighter;
 }
 
