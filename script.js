@@ -6,7 +6,15 @@ const logoText = document.querySelector(".middle-logo h1");
 const logo = document.querySelector(".animated-logo .middle-logo h1");
 const fsmContainer = document.querySelector(".fsm-container");
 const fsm = document.querySelector(".fsm .modal-content img");
+const hamburger = document.querySelector(".left-hamburger");
+const about = document.querySelector(".about-me");
+const entireTitle = document.querySelector('.animated-title');
+const canvas = document.querySelector('.canvas');
 // const projectIMG = document.querySelector('.fsm .modal-content img');
+
+hamburger.addEventListener("click", function() {
+    about.classList.toggle('darken');
+})
 
 button.addEventListener("click", function () {
     title1.classList.add("closeTopText");
