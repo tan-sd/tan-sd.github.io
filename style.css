@@ -162,28 +162,33 @@ html {
 
 .animated-logo {
     position: absolute;
-    left: 5%;
-    top: 1%;
-    height: 50vmin;
-    width: 90vmin;
+    top: 5.1%;
+    left: 50%;
+    height: 5vmin;
+    width: 10vmin;
+    transform: translate(-50%, -50%);
 }
 
-.left-logo {
+.middle-logo {
     /* visibility: hidden;
     opacity: 0; */
+    height: 60px;
     position: absolute;
-    height: 10.5%;
     overflow: hidden;
     z-index: 1000;
 }
 
-.animated-logo > div.left-logo h1 {
+.left-logo {
+    filter: invert(64%) sepia(47%) saturate(407%) hue-rotate(5deg) brightness(86%) contrast(82%);
+}
+
+.animated-logo > div.middle-logo h1 {
     /* visibility: visible;
     opacity: 1; */
     transform: translate(0, 100%);
 }
 
-.left-logo h1 {
+.middle-logo h1 {
     /* cursor: pointer; */
     font-family: Helvetica;
     font-size: 2em;
@@ -195,10 +200,10 @@ html {
     user-select: none;
 }
 
-.animated-logo > div {
+/* .animated-logo > div {
     padding: 1.5vmin 0;
     position: absolute;
-}
+} */
 
 .fadeInLogo {
     animation: showTopText 0.5s;
