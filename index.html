@@ -8,6 +8,7 @@
         <script src="script.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
         <title>&#128102;&#127995; Tan Sheng Da • SMU</title>
         <link
             rel="apple-touch-icon"
@@ -17,40 +18,30 @@
     </head>
     <body>
         <div class="animated-icons">
-                    <ul>
-                        <li>
-                            <a
-                                href="https://instagram.com/shengdaa"
-                                target="_blank"
-                                ><img
-                                    src="icons/instagram_gold.png"
-                                    class="icon"
-                            /></a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://www.linkedin.com/in/shengdatan"
-                                target="_blank"
-                                ><img
-                                    src="icons/linkedin_gold.png"
-                                    class="icon"
-                            /></a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://www.github.com/tan-sd"
-                                target="_blank"
-                                ><img src="icons/github-gold.png" class="icon"
-                            /></a>
-                        </li>
-                        <li>
-                            <a
-                                href="mailto:shengdatan@gmail.com"
-                                target="_blank"
-                                ><img src="icons/email_gold.png" class="icon"
-                            /></a>
-                        </li>
-                    </ul>
+            <ul>
+                <li>
+                    <a href="https://instagram.com/shengdaa" target="_blank"
+                        ><img src="icons/instagram_gold.png" class="icon"
+                    /></a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/shengdatan"
+                        target="_blank"
+                        ><img src="icons/linkedin_gold.png" class="icon"
+                    /></a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/tan-sd" target="_blank"
+                        ><img src="icons/github-gold.png" class="icon"
+                    /></a>
+                </li>
+                <li>
+                    <a href="mailto:shengdatan@gmail.com" target="_blank"
+                        ><img src="icons/email_gold.png" class="icon"
+                    /></a>
+                </li>
+            </ul>
         </div>
 
         <div class="animated-logo">
@@ -155,6 +146,108 @@
 
         <div class="cursor cursor-small"></div>
         <canvas class="cursor cursor-canvas" resize></canvas>
-        <div class="about-me"></div>
+
+        <div id="scrolling-container">
+            <ul id="scrolling-text">
+                <li>
+                    <br /><span
+                        class="sentenceOne"
+                        style="color: rgb(255, 255, 255)"
+                    >
+                        Matt is an American designer, based in New York City,
+                    </span>
+                </li>
+                <li>
+                    <span class="sentenceOne" style="color: rgb(255, 255, 255)">
+                        currently crafting experiences <br />at Route.</span
+                    >
+                    <span
+                        class="sentenceTwo"
+                        style="color: rgba(255, 255, 255, 0.1)"
+                        >Previously, he was designing end-to-end products</span
+                    >
+                </li>
+                <li>
+                    <span
+                        class="sentenceTwo"
+                        style="color: rgba(255, 255, 255, 0.1)"
+                        >for Uber, Postmates and Meta.</span
+                    >
+                    <span
+                        class="sentenceThree"
+                        style="color: rgba(255, 255, 255, 0.1)"
+                        ><br />Matt holds degrees from the University of
+                        Washington in
+                    </span>
+                </li>
+                <li>
+                    <span
+                        class="sentenceThree"
+                        style="color: rgba(255, 255, 255, 0.1)"
+                        >both Visual Communication Design and Informatics.
+                    </span>
+                    <br /><span
+                        class="sentenceFour"
+                        style="color: rgba(255, 255, 255, 0.1)"
+                        >You can find more of him on:</span
+                    >
+                </li>
+                <li>
+                    <span
+                        class="sentenceFour"
+                        style="color: rgba(255, 255, 255, 0.1)"
+                        ><a
+                            href="https://www.instagram.com/matt.arw/?hl=en"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style="color: rgba(255, 255, 255, 0.1)"
+                            >Instagram</a
+                        >,
+                        <a
+                            href="https://medium.com/@matthewjamesfarmer"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style="color: rgba(255, 255, 255, 0.1)"
+                            >Medium</a
+                        >,
+                        <a
+                            href="https://dribbble.com/MatthewFarmer"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style="color: rgba(255, 255, 255, 0.1)"
+                            >Dribbble</a
+                        >,
+                        <a
+                            href="https://twitter.com/mattjamesfarmer"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style="color: rgba(255, 255, 255, 0.1)"
+                            >Twitter</a
+                        >,
+                        <a
+                            href="mailto:MatthewJamesFarmer@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style="color: rgba(255, 255, 255, 0.1)"
+                            >Email</a
+                        >,
+                        <a
+                            href="Matt Farmer Resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style="color: rgba(255, 255, 255, 0.1)"
+                        >
+                            Resume.</a
+                        ></span
+                    >
+                </li>
+
+                <!--<br>
+                <span id="sentenceOne"> Matt is an American designer, based in New York City, currently crafting experiences at Uber Eats. </span> 
+                <span id="sentenceTwo">Previously, he was designing end-to-end products for Postmates and Facebook. </span>
+                <span id="sentenceThree">Matt holds degrees from the University of Washington in Visual Communication Design and Informatics.</span>
+                <span id="sentenceFour"> You can find more of him on: Instagram, Medium, Dribbble, Twitter, Email, Resume.</span>-->
+            </ul>
+        </div>
     </body>
 </html>
