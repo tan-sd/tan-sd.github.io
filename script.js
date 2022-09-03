@@ -8,13 +8,33 @@ const fsmContainer = document.querySelector(".fsm-container");
 const fsm = document.querySelector(".fsm .modal-content img");
 const hamburger = document.querySelector(".left-hamburger");
 const about = document.querySelector(".about-me");
-const entireTitle = document.querySelector('.animated-title');
 const canvas = document.querySelector('.canvas');
 // const projectIMG = document.querySelector('.fsm .modal-content img');
 
 hamburger.addEventListener("click", function() {
     about.classList.toggle('darken');
 })
+
+let burgerOpen = false;
+hamburger.addEventListener('click', function() {
+    if(!burgerOpen) {
+        hamburger.classList.remove('close');
+        hamburger.classList.remove('close2');
+        hamburger.classList.add('open');
+        setTimeout(function() {
+            hamburger.classList.add('open2')
+        }, 500)
+        burgerOpen = true;
+    } else {
+        hamburger.classList.remove('open');
+        hamburger.classList.remove('open2');
+        hamburger.classList.add('close');
+        setTimeout(function() {
+            hamburger.classList.add('close2')
+        }, 500);
+        burgerOpen = false;
+        }
+    })
 
 button.addEventListener("click", function () {
     title1.classList.add("closeTopText");
