@@ -106,6 +106,21 @@ logoText.addEventListener("click", function () {
     }
 });
 
+document.onclick = () => applyCursorRippleEffect(event); 
+
+function applyCursorRippleEffect(e) {
+   const ripple = document.createElement("div");
+
+   ripple.className = "ripple";
+   document.body.appendChild(ripple);
+
+  ripple.style.left = `${e.clientX}px`;
+  ripple.style.top = `${e.clientY}px`; 
+
+   ripple.style.animation = "ripple-effect .4s  linear";
+   ripple.onanimationend = () => document.body.removeChild(ripple);
+}
+
 // Setup
 var fsmActual = document.createElement("div");
 fsmActual.setAttribute("id", "fsm_actual");
@@ -384,7 +399,6 @@ const initHovers = () => {
 };
 
 initHovers();
-
 
 // const cursor = document.querySelector('.cursor');
 // const animateCursor = (e) => {
