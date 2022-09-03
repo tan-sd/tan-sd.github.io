@@ -1194,6 +1194,7 @@ ul li:hover:before {
     top: 0px;
     left: 0px;
     backdrop-filter: blur(18px) contrast(90%);
+    -webkit-backdrop-filter: blur(18px) contrast(90%);
   }
 
 /*
