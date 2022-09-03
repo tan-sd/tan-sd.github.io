@@ -1254,6 +1254,23 @@ ul li:hover:before {
     position: fixed;
   }
 
+  .ripple {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    position: fixed;
+    border-radius: 50%;
+    border: 1px solid #ffffff59;
+    pointer-events: none;
+ }
+ 
+ @keyframes ripple-effect {
+    to {
+       transform:scale(15);
+       opacity: 0.01;
+    }
+ }
+
 /*
 Make the website text centralised so it can scale according to the resolutions
 Implement a button to go back to the projects/works overview in each project/works
