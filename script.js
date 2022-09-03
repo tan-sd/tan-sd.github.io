@@ -7,7 +7,7 @@ const logo = document.querySelector(".animated-logo .middle-logo h1");
 const fsmContainer = document.querySelector(".fsm-container");
 const fsm = document.querySelector(".fsm .modal-content img");
 const hamburger = document.querySelector(".left-hamburger");
-const about = document.querySelector(".about-me");
+const about = document.querySelector("#scrolling-container");
 const canvas = document.querySelector('.canvas');
 // const projectIMG = document.querySelector('.fsm .modal-content img');
 
@@ -399,6 +399,81 @@ const initHovers = () => {
 };
 
 initHovers();
+
+document.fonts.ready.then(function() {
+    document.getElementById("scrolling-container").addEventListener('scroll', function ( event ) {
+
+        var height = $(document.getElementById("scrolling-container")).scrollTop();
+
+        if (height > 885) {
+            document.getElementById("scrolling-container").scrollTop = 885;
+        }
+
+        if (height < 75) {
+            document.getElementById("scrolling-container").scrollTop = 75;
+        }
+
+        var isSentenceOne = true;
+        var isSentenceTwo = true;
+        var isSentenceThree = true;
+        var isSentenceFour = true;
+
+        if (height <= 75) {
+            isSentenceOne = true;
+            isSentenceTwo = false;
+            isSentenceThree = false;
+            isSentenceFour = false;
+        } else if (height == 345) {
+            isSentenceOne = false;
+            isSentenceTwo = true;
+            isSentenceThree = false;
+            isSentenceFour = false;
+        } else if (height == 615) {
+            isSentenceOne = false;
+            isSentenceTwo = false;
+            isSentenceThree = true;
+            isSentenceFour = false;
+        } else if (height >= 885) {
+            isSentenceOne = false;
+            isSentenceTwo = false;
+            isSentenceThree = false;
+            isSentenceFour = true;
+        }
+
+        document.getElementsByClassName("sentenceOne")[0].style.color = isSentenceOne ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        document.getElementsByClassName("sentenceOne")[1].style.color = isSentenceOne ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+
+        document.getElementsByClassName("sentenceTwo")[0].style.color = isSentenceTwo ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        document.getElementsByClassName("sentenceTwo")[1].style.color = isSentenceTwo ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+
+        document.getElementsByClassName("sentenceThree")[0].style.color = isSentenceThree ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        document.getElementsByClassName("sentenceThree")[1].style.color = isSentenceThree ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+
+        document.getElementsByClassName("sentenceFour")[0].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        document.getElementsByClassName("sentenceFour")[1].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+
+        // document.querySelectorAll("#scrolling-container ul li a")[0].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        // document.querySelectorAll("#scrolling-container ul li a")[1].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        // document.querySelectorAll("#scrolling-container ul li a")[2].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        // document.querySelectorAll("#scrolling-container ul li a")[3].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        // document.querySelectorAll("#scrolling-container ul li a")[4].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        // document.querySelectorAll("#scrolling-container ul li a")[5].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+
+        document.querySelectorAll('#scrolling-container ul li a')[0].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        document.querySelectorAll('#scrolling-container ul li a')[1].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        document.querySelectorAll('#scrolling-container ul li a')[2].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        document.querySelectorAll('#scrolling-container ul li a')[3].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        document.querySelectorAll('#scrolling-container ul li a')[4].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        document.querySelectorAll('#scrolling-container ul li a')[5].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+
+        // document.getElementsByTagName("a")[0].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        // document.getElementsByTagName("a")[1].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        // document.getElementsByTagName("a")[2].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        // document.getElementsByTagName("a")[3].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        // document.getElementsByTagName("a")[4].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        // document.getElementsByTagName("a")[5].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+    }, false);
+})
 
 // const cursor = document.querySelector('.cursor');
 // const animateCursor = (e) => {
