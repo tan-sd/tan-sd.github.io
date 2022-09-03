@@ -191,13 +191,66 @@ html {
 }
 
 .left-hamburger {
-    filter: invert(64%) sepia(47%) saturate(407%) hue-rotate(5deg) brightness(86%) contrast(82%);
+    height: 40px;
+    width: 40px;
     position: absolute;
     top: 9%;
     left: 5%;
     transform: translate(-50%, -50%);
     margin-left: 3em;
     z-index: 10000;
+}
+
+.hamburger::before {
+    content: '';
+    position: absolute;
+    width: 12.5px;
+    height: 5px;
+    background: #ae9556;
+    transition: all .5s ease-in-out;
+}
+
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 5px;
+    background: #ae9556;
+    transition: all .5s ease-in-out;
+    transform: translateY(10px);
+}
+
+.left-hamburger.open .hamburger::after {
+    transform: translateY(5px);
+}
+
+.left-hamburger.open2 .hamburger::after {
+    transform: rotate(45deg);
+}
+
+.left-hamburger.open .hamburger::before {
+    transform: translateY(5px);
+    width: 25px;
+}
+
+.left-hamburger.open2 .hamburger::before {
+    transform: rotate(-45deg);
+}
+
+.left-hamburger.close .hamburger::after {
+    transform: rotate(0deg);
+}
+
+.left-hamburger.close .hamburger::before {
+    transform: rotate(0deg);
+}
+
+.left-hamburger.close2 .hamburger::after {
+    transform: translateY(10px);
+}
+
+.left-hamburger.close2 .hamburger::before {
+    transform: translateY(0px);
 }
 
 .animated-logo > div.middle-logo h1 {
@@ -1195,6 +1248,10 @@ ul li:hover:before {
     left: 0px;
     backdrop-filter: blur(18px) contrast(90%);
     -webkit-backdrop-filter: blur(18px) contrast(90%);
+  }
+
+  .about-me {
+    position: fixed;
   }
 
 /*
