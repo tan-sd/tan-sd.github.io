@@ -17,7 +17,7 @@
         />
     </head>
     <body>
-        <div class="animated-icons">
+        <div class="animated-icons" style="filter: blur(0px)">
             <ul>
                 <li>
                     <a href="https://instagram.com/shengdaa" target="_blank"
@@ -54,7 +54,9 @@
             <div class="hamburger"></div>
         </div>
 
-        <div class="animated-title">
+        <div id="darken" style="background-color: rgba(18, 18, 18, 0)"></div>
+
+        <div class="animated-title" style="filter: blur(0px)">
             <div class="text-top">
                 <div>
                     <span>sheng</span>
@@ -147,107 +149,114 @@
         <div class="cursor cursor-small"></div>
         <canvas class="cursor cursor-canvas" resize></canvas>
 
-        <div id="scrolling-container">
-            <ul id="scrolling-text">
-                <li>
-                    <br /><span
-                        class="sentenceOne"
-                        style="color: rgb(255, 255, 255)"
-                    >
-                        Matt is an American designer, based in New York City,
-                    </span>
-                </li>
-                <li>
-                    <span class="sentenceOne" style="color: rgb(255, 255, 255)">
-                        currently crafting experiences <br />at Route.</span
-                    >
-                    <span
-                        class="sentenceTwo"
-                        style="color: rgba(255, 255, 255, 0.1)"
-                        >Previously, he was designing end-to-end products</span
-                    >
-                </li>
-                <li>
-                    <span
-                        class="sentenceTwo"
-                        style="color: rgba(255, 255, 255, 0.1)"
-                        >for Uber, Postmates and Meta.</span
-                    >
-                    <span
-                        class="sentenceThree"
-                        style="color: rgba(255, 255, 255, 0.1)"
-                        ><br />Matt holds degrees from the University of
-                        Washington in
-                    </span>
-                </li>
-                <li>
-                    <span
-                        class="sentenceThree"
-                        style="color: rgba(255, 255, 255, 0.1)"
-                        >both Visual Communication Design and Informatics.
-                    </span>
-                    <br /><span
-                        class="sentenceFour"
-                        style="color: rgba(255, 255, 255, 0.1)"
-                        >You can find more of him on:</span
-                    >
-                </li>
-                <li>
-                    <span
-                        class="sentenceFour"
-                        style="color: rgba(255, 255, 255, 0.1)"
-                        ><a
-                            href="https://www.instagram.com/matt.arw/?hl=en"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style="color: rgba(255, 255, 255, 0.1)"
-                            >Instagram</a
-                        >,
-                        <a
-                            href="https://medium.com/@matthewjamesfarmer"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style="color: rgba(255, 255, 255, 0.1)"
-                            >Medium</a
-                        >,
-                        <a
-                            href="https://dribbble.com/MatthewFarmer"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style="color: rgba(255, 255, 255, 0.1)"
-                            >Dribbble</a
-                        >,
-                        <a
-                            href="https://twitter.com/mattjamesfarmer"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style="color: rgba(255, 255, 255, 0.1)"
-                            >Twitter</a
-                        >,
-                        <a
-                            href="mailto:MatthewJamesFarmer@gmail.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style="color: rgba(255, 255, 255, 0.1)"
-                            >Email</a
-                        >,
-                        <a
-                            href="Matt Farmer Resume.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style="color: rgba(255, 255, 255, 0.1)"
+        <div id="background-item" style="padding: 0px 7%; visibility: hidden">
+            <div id="scrolling-container">
+                <ul id="scrolling-text">
+                    <li>
+                        <br /><span
+                            class="sentenceOne"
+                            style="color: rgb(255, 255, 255)"
                         >
-                            Resume.</a
-                        ></span
-                    >
-                </li>
+                            Matt is an American designer, based in New York
+                            City,
+                        </span>
+                    </li>
+                    <li>
+                        <span
+                            class="sentenceOne"
+                            style="color: rgb(255, 255, 255)"
+                        >
+                            currently crafting experiences <br />at Route.</span
+                        >
+                        <span
+                            class="sentenceTwo"
+                            style="color: rgba(255, 255, 255, 0.1)"
+                            >Previously, he was designing end-to-end
+                            products</span
+                        >
+                    </li>
+                    <li>
+                        <span
+                            class="sentenceTwo"
+                            style="color: rgba(255, 255, 255, 0.1)"
+                            >for Uber, Postmates and Meta.</span
+                        >
+                        <span
+                            class="sentenceThree"
+                            style="color: rgba(255, 255, 255, 0.1)"
+                            ><br />Matt holds degrees from the University of
+                            Washington in
+                        </span>
+                    </li>
+                    <li>
+                        <span
+                            class="sentenceThree"
+                            style="color: rgba(255, 255, 255, 0.1)"
+                            >both Visual Communication Design and Informatics.
+                        </span>
+                        <br /><span
+                            class="sentenceFour"
+                            style="color: rgba(255, 255, 255, 0.1)"
+                            >You can find more of him on:</span
+                        >
+                    </li>
+                    <li>
+                        <span
+                            class="sentenceFour"
+                            style="color: rgba(255, 255, 255, 0.1)"
+                            ><a
+                                href="https://www.instagram.com/matt.arw/?hl=en"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style="color: rgba(255, 255, 255, 0.1)"
+                                >Instagram</a
+                            >,
+                            <a
+                                href="https://medium.com/@matthewjamesfarmer"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style="color: rgba(255, 255, 255, 0.1)"
+                                >Medium</a
+                            >,
+                            <a
+                                href="https://dribbble.com/MatthewFarmer"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style="color: rgba(255, 255, 255, 0.1)"
+                                >Dribbble</a
+                            >,
+                            <a
+                                href="https://twitter.com/mattjamesfarmer"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style="color: rgba(255, 255, 255, 0.1)"
+                                >Twitter</a
+                            >,
+                            <a
+                                href="mailto:MatthewJamesFarmer@gmail.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style="color: rgba(255, 255, 255, 0.1)"
+                                >Email</a
+                            >,
+                            <a
+                                href="Matt Farmer Resume.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style="color: rgba(255, 255, 255, 0.1)"
+                            >
+                                Resume.</a
+                            ></span
+                        >
+                    </li>
 
-                <!--<br>
+                    <!--<br>
                 <span id="sentenceOne"> Matt is an American designer, based in New York City, currently crafting experiences at Uber Eats. </span> 
                 <span id="sentenceTwo">Previously, he was designing end-to-end products for Postmates and Facebook. </span>
                 <span id="sentenceThree">Matt holds degrees from the University of Washington in Visual Communication Design and Informatics.</span>
                 <span id="sentenceFour"> You can find more of him on: Instagram, Medium, Dribbble, Twitter, Email, Resume.</span>-->
-            </ul>
+                </ul>
+            </div>
         </div>
     </body>
 </html>
