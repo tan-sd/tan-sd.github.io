@@ -2,20 +2,20 @@ const body = document.querySelector("body");
 const button = document.querySelector(".button");
 const title1 = document.querySelector(".text-top div span");
 const title2 = document.querySelector(".text-bottom div span");
-const logoText = document.querySelector(".middle-logo h1");
-const logo = document.querySelector(".animated-logo .middle-logo h1");
 const fsmContainer = document.querySelector(".fsm-container");
 const fsm = document.querySelector(".fsm .modal-content img");
 const hamburger = document.querySelector(".left-hamburger");
 const about = document.querySelector("#scrolling-container");
+const homeBtn = document.querySelector('.home-btn');
 // const projectIMG = document.querySelector('.fsm .modal-content img');
 
 button.addEventListener("click", function () {
     title1.classList.add("closeTopText");
     title2.classList.add("fadeOut");
-    logo.classList.add("fadeInLogo");
     button.classList.add("btnFadeOut");
     body.classList.add("changeBackground");
+    homeBtn.classList.add("btnFadeIn");
+    hamburger.classList.add('btnFadeOut')
     fsmContainer.classList.add("containerFadeIn");
     if (button.classList.contains("btnFadeIn")) {
         button.classList.remove("btnFadeIn");
@@ -29,10 +29,6 @@ button.addEventListener("click", function () {
         fsmContainer.classList.remove("containerFadeOut");
     }
 
-    if (logo.classList.contains("fadeOut")) {
-        logo.classList.remove("fadeOut");
-    }
-
     if (title1.classList.contains("fadeInTopText")) {
         title1.classList.remove("fadeInTopText");
     }
@@ -40,13 +36,20 @@ button.addEventListener("click", function () {
     if (title2.classList.contains("fadeInBottomText")) {
         title2.classList.remove("fadeInBottomText");
     }
+
+    if (homeBtn.classList.contains('btnFadeOut')) {
+        homeBtn.classList.remove('btnFadeOut');
+    }
+
+    if (hamburger.classList.contains('btnFadeIn')) {
+        hamburger.classList.remove('btnFadeIn');
+    }
 });
 
-logoText.addEventListener("click", function () {
+homeBtn.addEventListener("click", function () {
+    hamburger.classList.add('btnFadeIn');
     title1.classList.add("fadeInTopText");
     title2.classList.add("fadeInBottomText");
-    logo.classList.remove("fadeIn");
-    logo.classList.add("fadeOut");
     button.classList.remove("btnFadeOut");
     button.classList.add("btnFadeIn");
     fsmContainer.classList.add("containerFadeOut");
@@ -77,6 +80,10 @@ logoText.addEventListener("click", function () {
 
     if (title1.classList.contains("closeTopText")) {
         title1.classList.remove("closeTopText");
+    }
+
+    if (homeBtn.classList.contains("btnFadeIn")) {
+        homeBtn.classList.remove('btnFadeIn');
     }
 });
 
