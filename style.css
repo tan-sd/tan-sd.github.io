@@ -171,23 +171,23 @@ html {
     transform: translate(-50%, -50%);
 } */
 
-.animated-logo {
+/* .animated-logo {
     position: absolute;
     top: 5.1%;
     left: 50%;
     height: 5vmin;
     width: 10vmin;
     transform: translate(-50%, -50%);
-}
+} */
 
-.middle-logo {
-    /* visibility: hidden;
-    opacity: 0; */
+/* .middle-logo {
+    visibility: hidden;
+    opacity: 0;
     height: 60px;
     position: absolute;
     overflow: hidden;
     z-index: 1000;
-}
+} */
 
 .left-hamburger {
     height: 40px;
@@ -252,11 +252,11 @@ html {
     transform: translateY(0px);
 }
 
-.animated-logo > div.middle-logo h1 {
-    /* visibility: visible;
-    opacity: 1; */
+/* .animated-logo > div.middle-logo h1 {
+    visibility: visible;
+    opacity: 1;
     transform: translate(0, 100%);
-}
+} */
 
 .middle-logo h1 {
     /* cursor: pointer; */
@@ -386,7 +386,7 @@ html {
 }
 
 .btnFadeIn {
-    visibility: visible;
+    visibility: visible !important;
     opacity: 1;
     transition: 0.5s ease-in-out;
     transition-delay: 1.5s;
@@ -1076,6 +1076,69 @@ html {
     transform: translate(-50%, -50%);
     transition: 1s ease-in-out;
 }
+
+.home-btn {
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 7%;
+    left: 4.5%;
+    transform: translate(-50%, -50%);
+    margin-left: 3em;
+    z-index: 10000;
+}
+
+/* .left-line {
+    position: absolute;
+    left: 5px;
+    width: 20px;
+    height: 4px;
+    background-color: #ae9556;
+    transform:rotate(90deg);
+}
+
+.right-line {
+    position: absolute;
+    left: 30px;
+    width: 20px;
+    height: 4px;
+    background-color: #ae9556;
+    transform: translate(-50%);
+    transform:rotate(90deg);
+}
+
+.bottom-line {
+    position: absolute;
+    left: 27.5px;
+    bottom: 25.5px;
+    transform: translate(-50%);
+    width: 29px;
+    height: 4px;
+    background-color: #ae9556;
+}
+
+.left-roof {
+    position: absolute;
+    left: 11.5px;
+    bottom: 52px;
+    width: 20.5px;
+    height: 4px;
+    background-color: #ae9556;
+    transform: rotate(-45deg);
+}
+
+.right-roof {
+    position: absolute;
+    left: 23px;
+    bottom: 52px;
+    width: 20.5px;
+    height: 4px;
+    background-color: #ae9556;
+    transform: translate(-50%);
+    transform: rotate(45deg);
+} */
 
 /* @media (max-width: 578px) {
     .animated-icons {
