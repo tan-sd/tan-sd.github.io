@@ -14,7 +14,7 @@ button.addEventListener("click", function () {
     title2.classList.add("fadeOut");
     button.classList.add("btnFadeOut");
     body.classList.add("changeBackground");
-    homeBtn.classList.add("btnFadeIn");
+    homeBtn.classList.add("home-btn-transition");
     hamburger.classList.add('btnFadeOut')
     fsmContainer.classList.add("containerFadeIn");
     if (button.classList.contains("btnFadeIn")) {
@@ -35,10 +35,6 @@ button.addEventListener("click", function () {
 
     if (title2.classList.contains("fadeInBottomText")) {
         title2.classList.remove("fadeInBottomText");
-    }
-
-    if (homeBtn.classList.contains('btnFadeOut')) {
-        homeBtn.classList.remove('btnFadeOut');
     }
 
     if (hamburger.classList.contains('btnFadeIn')) {
@@ -82,8 +78,8 @@ homeBtn.addEventListener("click", function () {
         title1.classList.remove("closeTopText");
     }
 
-    if (homeBtn.classList.contains("btnFadeIn")) {
-        homeBtn.classList.remove('btnFadeIn');
+    if (homeBtn.classList.contains("home-btn-transition")) {
+        homeBtn.classList.remove('home-btn-transition');
     }
 });
 
