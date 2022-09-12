@@ -462,6 +462,7 @@ hamburger.addEventListener('click', function() {
         document.querySelector('.animated-icons').style.filter = 'blur(20px)';
         document.querySelector('.animated-title').style.filter = 'blur(20px)';
         document.getElementById('darken').style.backgroundColor = 'rgba(18, 18, 18, 0.8)';
+        document.getElementById('darken').style.zIndex = '9999';
         setTimeout(function() {
             hamburger.classList.add('open2')
         }, 500)
@@ -474,6 +475,7 @@ hamburger.addEventListener('click', function() {
         document.querySelector('.animated-icons').style.filter = 'blur(0px)';
         document.querySelector('.animated-title').style.filter = 'blur(0px)';
         document.getElementById('darken').style.backgroundColor = 'rgba(18, 18, 18, 0)';
+        document.getElementById('darken').style.zIndex = '0';
         setTimeout(function() {
             hamburger.classList.add('close2')
         }, 500);
