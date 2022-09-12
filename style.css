@@ -199,8 +199,8 @@ html {
 .hamburger::before {
     content: '';
     position: absolute;
-    width: 12.5px;
-    height: 5px;
+    width: 2vmin;
+    height: 0.5vmin;
     background: #ae9556;
     transition: all .5s ease-in-out;
 }
@@ -208,15 +208,15 @@ html {
 .hamburger::after {
     content: '';
     position: absolute;
-    width: 25px;
-    height: 5px;
+    width: 4vmin;
+    height: 0.5vmin;
     background: #ae9556;
     transition: all .5s ease-in-out;
     transform: translateY(10px);
 }
 
 .left-hamburger.open .hamburger::after {
-    transform: translateY(5px);
+    transform: translateY(1vmin);
 }
 
 .left-hamburger.open2 .hamburger::after {
@@ -224,8 +224,8 @@ html {
 }
 
 .left-hamburger.open .hamburger::before {
-    transform: translateY(5px);
-    width: 25px;
+    transform: translateY(1vmin);
+    width: 4vmin;
 }
 
 .left-hamburger.open2 .hamburger::before {
@@ -241,11 +241,11 @@ html {
 }
 
 .left-hamburger.close2 .hamburger::after {
-    transform: translateY(10px);
+    transform: translateY(1vmin);
 }
 
 .left-hamburger.close2 .hamburger::before {
-    transform: translateY(0px);
+    transform: translateY(0vmin);
 }
 
 /* .animated-logo > div.middle-logo h1 {
@@ -830,11 +830,6 @@ html {
     padding-top: 8vmin;
 }
 
-/* .animated-icons ul {
-    margin-top:0;
-    margin-bottom:0;
-} */
-
 .nav-bar ul {
     padding-left: 0;
     list-style: none;
@@ -843,39 +838,31 @@ html {
     justify-content: space-between;
 }
 
-.animated-icons a {
+.animated-icons ul li a {
     cursor: none;
-    margin-left: 3vmin;
-}
-
-.icon {
-    width: 17px;
-}
-
-.animated-icons ul li ul li {
-    /* display: inline-block;
-    position: relative; */
-    padding: 0;
-    margin: 0;
     margin-left: 3vmin;
     animation: 3s ease 0s normal forwards 1 fadeInIcons;
     -webkit-animation: 3s ease 0s normal forwards 1 fadeInIcons;
 }
 
+.icon {
+    width: 2vmin;
+}
+
 .animated-icons ul li:hover:before {
     content: '';
     position: absolute;
+    margin-left: 3.5vmin;
     bottom: -15px;
     background: rgba(174, 149, 86);
-    width: 7px;
-    height: 7px;
+    width: 0.8vmin;
+    height: 0.8vmin;
     border-radius: 100%;
-    left: 4vmin;
-    transform: translate(-50%, -50%);
 }
 
+/* Title */
+
 .animated-title {
-    /* text-align: center; */
     height: 50vmin;
     left: 50%;
     top: 50%;
@@ -974,18 +961,6 @@ html {
 }
 
 .cursor-small {
-    /* box-shadow: 0 0 15px #00000033;
-    left: 50%;
-    top: 70%;
-    transform: translate(-50%, -50%);
-    border: 1px solid #0000001a;
-    backdrop-filter: blur(3px);
-    background: #ffffff0d;
-    position: absolute;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    /* z-index: 9; */
-    /* width: 60px; */
     width: 5px;
     height: 5px;
     left: -2.5px;
