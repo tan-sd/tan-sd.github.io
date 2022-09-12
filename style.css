@@ -190,8 +190,8 @@ html {
 } */
 
 .left-hamburger {
-    height: 40px;
-    width: 40px;
+    height: 2vmin;
+    width: 5vmin;
     position: absolute;
     z-index: 10000;
 }
@@ -206,13 +206,14 @@ html {
 }
 
 .hamburger::after {
+    transform: translateY(1vmin);
     content: '';
     position: absolute;
     width: 4vmin;
     height: 0.5vmin;
     background: #ae9556;
     transition: all .5s ease-in-out;
-    transform: translateY(10px);
+    transform: translateY(1vmin);
 }
 
 .left-hamburger.open .hamburger::after {
