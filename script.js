@@ -417,17 +417,17 @@ document.fonts.ready.then(function() {
             isSentenceFour = true;
         }
 
-        document.getElementsByClassName("sentenceOne")[0].style.color = isSentenceOne ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
-        document.getElementsByClassName("sentenceOne")[1].style.color = isSentenceOne ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        document.getElementsByClassName("sentenceOne")[0].style.color = isSentenceOne ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
+        document.getElementsByClassName("sentenceOne")[1].style.color = isSentenceOne ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
 
-        document.getElementsByClassName("sentenceTwo")[0].style.color = isSentenceTwo ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
-        document.getElementsByClassName("sentenceTwo")[1].style.color = isSentenceTwo ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        document.getElementsByClassName("sentenceTwo")[0].style.color = isSentenceTwo ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
+        document.getElementsByClassName("sentenceTwo")[1].style.color = isSentenceTwo ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
 
-        document.getElementsByClassName("sentenceThree")[0].style.color = isSentenceThree ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
-        document.getElementsByClassName("sentenceThree")[1].style.color = isSentenceThree ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        document.getElementsByClassName("sentenceThree")[0].style.color = isSentenceThree ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
+        document.getElementsByClassName("sentenceThree")[1].style.color = isSentenceThree ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
 
-        document.getElementsByClassName("sentenceFour")[0].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
-        document.getElementsByClassName("sentenceFour")[1].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        document.getElementsByClassName("sentenceFour")[0].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
+        document.getElementsByClassName("sentenceFour")[1].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
 
         // document.querySelectorAll("#scrolling-container ul li a")[0].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
         // document.querySelectorAll("#scrolling-container ul li a")[1].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
@@ -436,12 +436,12 @@ document.fonts.ready.then(function() {
         // document.querySelectorAll("#scrolling-container ul li a")[4].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
         // document.querySelectorAll("#scrolling-container ul li a")[5].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
 
-        document.querySelectorAll('#scrolling-container ul li a')[0].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
-        document.querySelectorAll('#scrolling-container ul li a')[1].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
-        document.querySelectorAll('#scrolling-container ul li a')[2].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
-        document.querySelectorAll('#scrolling-container ul li a')[3].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
-        document.querySelectorAll('#scrolling-container ul li a')[4].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
-        document.querySelectorAll('#scrolling-container ul li a')[5].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
+        document.querySelectorAll('#scrolling-container ul li a')[0].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
+        document.querySelectorAll('#scrolling-container ul li a')[1].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
+        document.querySelectorAll('#scrolling-container ul li a')[3].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
+        document.querySelectorAll('#scrolling-container ul li a')[2].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
+        document.querySelectorAll('#scrolling-container ul li a')[4].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
+        document.querySelectorAll('#scrolling-container ul li a')[5].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
 
         // document.getElementsByTagName("a")[0].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
         // document.getElementsByTagName("a")[1].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
@@ -459,6 +459,7 @@ hamburger.addEventListener('click', function() {
         hamburger.classList.remove('close2');
         hamburger.classList.add('open');
         document.getElementById('background-item').style.visibility = 'visible';
+        document.getElementById('background-item').style.opacity = '1';
         document.querySelector('.animated-icons').style.filter = 'blur(20px)';
         document.querySelector('.animated-title').style.filter = 'blur(20px)';
         document.getElementById('darken').style.backgroundColor = 'rgba(18, 18, 18, 0.8)';
@@ -472,6 +473,7 @@ hamburger.addEventListener('click', function() {
         hamburger.classList.remove('open2');
         hamburger.classList.add('close');
         document.getElementById('background-item').style.visibility = 'hidden';
+        document.getElementById('background-item').style.opacity = '0';
         document.querySelector('.animated-icons').style.filter = 'blur(0px)';
         document.querySelector('.animated-title').style.filter = 'blur(0px)';
         document.getElementById('darken').style.backgroundColor = 'rgba(18, 18, 18, 0)';
@@ -482,11 +484,3 @@ hamburger.addEventListener('click', function() {
         burgerOpen = false;
         }
     })
-
-// const cursor = document.querySelector('.cursor');
-// const animateCursor = (e) => {
-//     cursor.style.left = `${e.pageX}px`;
-//     cursor.style.top = `${e.pageY}px`;
-// }
-
-// window.addEventListener('mousemove', animateCursor);
