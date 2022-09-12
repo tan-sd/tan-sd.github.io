@@ -202,7 +202,7 @@ html {
     width: 2vmin;
     height: 0.5vmin;
     background: #ae9556;
-    transition: all .5s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 .hamburger::after {
@@ -212,7 +212,7 @@ html {
     width: 4vmin;
     height: 0.5vmin;
     background: #ae9556;
-    transition: all .5s ease-in-out;
+    transition: all .4s ease-in-out;
     transform: translateY(1vmin);
 }
 
@@ -1306,7 +1306,7 @@ html {
 
 #scrolling-container ul li {
     font-family: proDisplay;
-    font-size: 75px;
+    font-size: 70px;
     letter-spacing: -1.45px;
     line-height: 90px;
     scroll-snap-align: start;
