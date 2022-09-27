@@ -6,82 +6,82 @@ const fsmContainer = document.querySelector(".fsm-container");
 const fsm = document.querySelector(".fsm .modal-content img");
 const hamburger = document.querySelector(".left-hamburger");
 const about = document.querySelector("#scrolling-container");
-const homeBtn = document.querySelector('.home-btn');
+// const homeBtn = document.querySelector('.home-btn');
 // const projectIMG = document.querySelector('.fsm .modal-content img');
 
-button.addEventListener("click", function () {
-    title1.classList.add("closeTopText");
-    title2.classList.add("fadeOut");
-    button.classList.add("btnFadeOut");
-    body.classList.add("changeBackground");
-    homeBtn.classList.add("home-btn-transition");
-    hamburger.classList.add('btnFadeOut')
-    fsmContainer.classList.add("containerFadeIn");
-    if (button.classList.contains("btnFadeIn")) {
-        button.classList.remove("btnFadeIn");
-    }
+// button.addEventListener("click", function () {
+//     title1.classList.add("closeTopText");
+//     title2.classList.add("fadeOut");
+//     button.classList.add("btnFadeOut");
+//     body.classList.add("changeBackground");
+//     // homeBtn.classList.add("home-btn-transition");
+//     hamburger.classList.add('btnFadeOut')
+//     fsmContainer.classList.add("containerFadeIn");
+//     if (button.classList.contains("btnFadeIn")) {
+//         button.classList.remove("btnFadeIn");
+//     }
 
-    if (fsmContainer.classList.contains("containerFadeOut")) {
-        fsmContainer.classList.remove("containerFadeOut");
-    }
+//     if (fsmContainer.classList.contains("containerFadeOut")) {
+//         fsmContainer.classList.remove("containerFadeOut");
+//     }
 
-    if (fsmContainer.classList.contains("containerFadeOut")) {
-        fsmContainer.classList.remove("containerFadeOut");
-    }
+//     if (fsmContainer.classList.contains("containerFadeOut")) {
+//         fsmContainer.classList.remove("containerFadeOut");
+//     }
 
-    if (title1.classList.contains("fadeInTopText")) {
-        title1.classList.remove("fadeInTopText");
-    }
+//     if (title1.classList.contains("fadeInTopText")) {
+//         title1.classList.remove("fadeInTopText");
+//     }
 
-    if (title2.classList.contains("fadeInBottomText")) {
-        title2.classList.remove("fadeInBottomText");
-    }
+//     if (title2.classList.contains("fadeInBottomText")) {
+//         title2.classList.remove("fadeInBottomText");
+//     }
 
-    if (hamburger.classList.contains('btnFadeIn')) {
-        hamburger.classList.remove('btnFadeIn');
-    }
-});
+//     if (hamburger.classList.contains('btnFadeIn')) {
+//         hamburger.classList.remove('btnFadeIn');
+//     }
+// });
 
-homeBtn.addEventListener("click", function () {
-    hamburger.classList.add('btnFadeIn');
-    title1.classList.add("fadeInTopText");
-    title2.classList.add("fadeInBottomText");
-    button.classList.remove("btnFadeOut");
-    button.classList.add("btnFadeIn");
-    fsmContainer.classList.add("containerFadeOut");
-    body.classList.remove("changeBackground");
-    if (button.classList.contains("btnFadeOut")) {
-        button.classList.remove("btnFadeOut");
-    }
+// homeBtn.addEventListener("click", function () {
+//     hamburger.classList.add('btnFadeIn');
+//     title1.classList.add("fadeInTopText");
+//     title2.classList.add("fadeInBottomText");
+//     button.classList.remove("btnFadeOut");
+//     button.classList.add("btnFadeIn");
+//     fsmContainer.classList.add("containerFadeOut");
+//     body.classList.remove("changeBackground");
+//     if (button.classList.contains("btnFadeOut")) {
+//         button.classList.remove("btnFadeOut");
+//     }
 
-    if (title1.classList.contains("fadeOut")) {
-        title1.classList.remove("fadeOut");
-    }
+//     if (title1.classList.contains("fadeOut")) {
+//         title1.classList.remove("fadeOut");
+//     }
 
-    if (title2.classList.contains("fadeOut")) {
-        title2.classList.remove("fadeOut");
-    }
+//     if (title2.classList.contains("fadeOut")) {
+//         title2.classList.remove("fadeOut");
+//     }
 
-    if (fsmContainer.classList.contains("containerFadeIn")) {
-        fsmContainer.classList.remove("containerFadeIn");
-    }
+//     if (fsmContainer.classList.contains("containerFadeIn")) {
+//         fsmContainer.classList.remove("containerFadeIn");
+//     }
 
-    if (title2.classList.contains("removeDelay")) {
-        title2.classList.remove("removeDelay");
-    }
+//     if (title2.classList.contains("removeDelay")) {
+//         title2.classList.remove("removeDelay");
+//     }
 
-    if (fsmContainer.classList.contains("containerFadeIn")) {
-        fsmContainer.classList.remove("containerFadeIn");
-    }
+//     if (fsmContainer.classList.contains("containerFadeIn")) {
+//         fsmContainer.classList.remove("containerFadeIn");
+//     }
 
-    if (title1.classList.contains("closeTopText")) {
-        title1.classList.remove("closeTopText");
-    }
+//     if (title1.classList.contains("closeTopText")) {
+//         title1.classList.remove("closeTopText");
+//     }
 
-    if (homeBtn.classList.contains("home-btn-transition")) {
-        homeBtn.classList.remove('home-btn-transition');
-    }
-});
+//     if (homeBtn.classList.contains("home-btn-transition")) {
+//         homeBtn.classList.remove('home-btn-transition');
+//     }
+// });
 
 document.onclick = () => applyCursorRippleEffect(event); 
 
@@ -426,8 +426,8 @@ document.fonts.ready.then(function() {
         document.getElementsByClassName("sentenceThree")[0].style.color = isSentenceThree ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
         document.getElementsByClassName("sentenceThree")[1].style.color = isSentenceThree ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
 
-        document.getElementsByClassName("sentenceFour")[0].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
-        document.getElementsByClassName("sentenceFour")[1].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
+        // document.getElementsByClassName("sentenceFour")[0].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
+        // document.getElementsByClassName("sentenceFour")[1].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
 
         // document.querySelectorAll("#scrolling-container ul li a")[0].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
         // document.querySelectorAll("#scrolling-container ul li a")[1].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
@@ -436,12 +436,12 @@ document.fonts.ready.then(function() {
         // document.querySelectorAll("#scrolling-container ul li a")[4].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
         // document.querySelectorAll("#scrolling-container ul li a")[5].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
 
-        document.querySelectorAll('#scrolling-container ul li a')[0].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
-        document.querySelectorAll('#scrolling-container ul li a')[1].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
-        document.querySelectorAll('#scrolling-container ul li a')[3].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
-        document.querySelectorAll('#scrolling-container ul li a')[2].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
-        document.querySelectorAll('#scrolling-container ul li a')[4].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
-        document.querySelectorAll('#scrolling-container ul li a')[5].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
+        // document.querySelectorAll('#scrolling-container ul li a')[0].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
+        // document.querySelectorAll('#scrolling-container ul li a')[1].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
+        // document.querySelectorAll('#scrolling-container ul li a')[3].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
+        // document.querySelectorAll('#scrolling-container ul li a')[2].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
+        // document.querySelectorAll('#scrolling-container ul li a')[4].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
+        // document.querySelectorAll('#scrolling-container ul li a')[5].style.color = isSentenceFour ? 'rgba(174, 149, 86, 1)' : 'rgba(174, 149, 86, 0.1)';
 
         // document.getElementsByTagName("a")[0].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
         // document.getElementsByTagName("a")[1].style.color = isSentenceFour ? 'rgba(255, 255, 255, 1)' : 'rgba(255, 255, 255, 0.1)';
