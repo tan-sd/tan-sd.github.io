@@ -559,3 +559,45 @@ html {
     width: 100%;
     text-align: center;
 }
+
+@media (max-width: 967px) {
+    .project-container {
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+
+@media (max-width: 700px) {
+.project-container .project .project-image {
+    width: 280px;
+    height: 160px;
+}
+}
+
+@media (max-width: 967px) {
+    .project-container .project .project-image {
+        width: 400px;
+        height: 220px;
+        margin: 0 0 1rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .project-container .project .project-image {
+        width: 500px;
+        height: 280px;
+    }
+}
+
+@media (max-width: 967px) {
+    .project-container .project .project-info {
+        width: 275px;
+    }
+}
+
+@media (max-width: 967px) {
+    .project-container .project .project-info h2 {
+        font-size: 1.4rem;
+    }
+}

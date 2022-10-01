@@ -486,6 +486,12 @@ hamburger.addEventListener('click', function() {
     })
     
     /* SCROLL ANIMATIONS */
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.9,
+    }
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             console.log(entry)
