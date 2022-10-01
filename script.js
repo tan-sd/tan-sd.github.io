@@ -139,7 +139,7 @@ var openFSM = function (event) {
             $fsmActual.classList.add(classes[i]);
         }
         $fsmActual.classList.add("growing");
-        $childrenLogo.classList.add("growing"); // Follow the shrinking and full screen method?
+        $childrenLogo.classList.add("growing");
         $childrenHeader.classList.add("growing");
         $childrenDescription.classList.add("growing");
         $childrenButton.classList.add("growing");
@@ -484,3 +484,20 @@ hamburger.addEventListener('click', function() {
         burgerOpen = false;
         }
     })
+    
+    /* SCROLL ANIMATIONS */
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry)
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+
+    const leftHiddenElements = document.querySelectorAll('.left');
+    const rightHiddenElements = document.querySelectorAll('.right');
+    leftHiddenElements.forEach((el) => observer.observe(el));
+    rightHiddenElements.forEach((el) => observer.observe(el));
