@@ -4,6 +4,7 @@ html {
     margin: 0;
     padding: 0;
     background-color: #161516;
+    scroll-behavior: smooth;
 }
 
 /* FONTS */
@@ -558,6 +559,10 @@ html {
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
+}
+
+.button a {
+    cursor: none;
 }
 
 @media (max-width: 967px) {
