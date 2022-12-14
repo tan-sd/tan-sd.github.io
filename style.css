@@ -614,14 +614,11 @@ html {
 }
 
 .scrolldown {
-    --color: #ae9556;
-    --sizeX: 25px;
-    --sizeY: 45px;
     position: relative;
-    width: var(--sizeX);
-    height: var(--sizeY);
-    margin-left: var(sizeX / 2);
-    border: calc(var(--sizeX) / 10) solid var(--color);
+    width: 25px;
+    height: 45px;
+    margin-left: 25px / 2;
+    border: calc(25px / 10) solid #ae9556;
     border-radius: 50px;
     box-sizing: border-box;
     margin-bottom: 16px;
@@ -635,7 +632,7 @@ html {
     width: 6px;
     height: 6px;
     margin-left: -3px;
-    background-color: var(--color);
+    background-color: #ae9556;
     border-radius: 100%;
     animation: scrolldown-anim 2.5s infinite;
     box-sizing: border-box;
@@ -675,7 +672,7 @@ html {
   .chevrondown {
     margin-top: -6px;
     position: relative;
-    border: solid var(--color);
+    border: solid #ae9556;
     border-width: 0 3px 3px 0;
     display: inline-block;
     width: 10px;
