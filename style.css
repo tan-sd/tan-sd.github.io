@@ -103,6 +103,7 @@ html {
     z-index: 1000;
     user-select: none;
     cursor: none;
+    animation: fadeInEnter 2s ease-in-out;
 }
 
 .button img {
